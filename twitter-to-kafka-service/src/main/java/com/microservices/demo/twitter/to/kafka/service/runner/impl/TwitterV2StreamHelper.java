@@ -39,7 +39,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Component
-@ConditionalOnProperty(name = "${twitter-to-kafka-service.enable-v2-tweets}", havingValue = "true", matchIfMissing = true)
+@ConditionalOnExpression("${twitter-to-kafka-service.enable-v2-tweets} && not ${twitter-to-kafka-service.enable-mock-tweets}")
 public class TwitterV2StreamHelper {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterV2StreamHelper.class);

@@ -199,3 +199,53 @@ org.json.JSONException: A JSONObject text must begin with '{' at 3 [character 4 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+2024-04-06 19:43:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 20308 (D:\Learning by path\Event-Driven Microservices Spring Boot, Kafka and Elastic\microservices-demo\twitter-to-kafka-service\target\classes started by Sagar in D:\Learning by path\Event-Driven Microservices Spring Boot, Kafka and Elastic\microservices-demo)
+2024-04-06 19:43:42 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-06 19:43:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.678 seconds (process running for 2.695)
+2024-04-06 19:43:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Starts...
+2024-04-06 19:43:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2024-04-06 19:43:43 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices!
+2024-04-06 19:43:43 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Spring, Kafka, ElasticSearch]
+2024-04-06 19:43:45 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2024-04-06 19:43:45 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-06 19:43:45 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.json.JSONException: A JSONObject text must begin with '{' at 3 [character 4 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503)
+	at org.json.JSONObject.<init>(JSONObject.java:208)
+	at org.json.JSONObject.<init>(JSONObject.java:402)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.getFormattedTweet(TwitterV2StreamHelper.java:224)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:89)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:40)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:35)
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:790)
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:83)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:88)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:789)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:774)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:341)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
+2024-04-06 22:05:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 with PID 22220 (D:\Learning by path\Event-Driven Microservices Spring Boot, Kafka and Elastic\microservices-demo\twitter-to-kafka-service\target\classes started by Sagar in D:\Learning by path\Event-Driven Microservices Spring Boot, Kafka and Elastic\microservices-demo)
+2024-04-06 22:05:56 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-06 22:05:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.276 seconds (process running for 1.962)
+2024-04-06 22:05:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Starts...
+2024-04-06 22:05:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, ElasticSearch]
+2024-04-06 22:05:57 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Microservices!
+2024-04-06 22:05:57 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, ElasticSearch]
+2024-04-06 22:05:57 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Twitter status with text placerat Nulla adipiscing placerat elit Microservices Nulla Nulla consectetur hendrerit
+2024-04-06 22:06:07 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Twitter status with text consectetur ipsum congue congue ElasticSearch congue potenti hendrerit
+2024-04-06 22:06:17 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Twitter status with text congue elit adipiscing dolor sit amet Java consectetur Donec placerat
